@@ -1,4 +1,4 @@
-const prototypeData = require('./data');
+const { prototypeData } = require('./data');
 const util = require('./util');
 const { createCard, createDeck, countCards } = require('../src/card');
 const { initRoundController } = require('../src/round');
