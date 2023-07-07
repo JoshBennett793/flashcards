@@ -43,7 +43,7 @@ describe('taking a turn', () => {
   it('should pass in an id to incorrectGuesses if guess is incorrect', () => {
     takeTurn('array', round);
 
-    expect(round.incorrectGuesses).to.deep.equal([1]);
+    expect(round.incorrectGuesses).to.deep.equal([[1, 'array']]);
   });
 
   it('updates currentCard after guess', () => {
