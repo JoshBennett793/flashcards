@@ -1,5 +1,4 @@
-const data = require('./data');
-const prototypeQuestions = data.prototypeData;
+const prototypeData = require('./data');
 const util = require('./util');
 const { createCard, createDeck, countCards } = require('../src/card');
 const { initRoundController } = require('../src/round');
@@ -22,7 +21,7 @@ function createCardListFromDataset(dataset) {
 }
 
 function start() {
-  const cards = createCardListFromDataset(prototypeQuestions);
+  const cards = createCardListFromDataset(prototypeData);
   const deck = createDeck(cards);
   const round = initRoundController(deck);
   printMessage(deck);
